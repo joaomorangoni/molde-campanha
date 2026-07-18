@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Arte</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🎨 Gerador de Arte Personalizada</h1>
+
+        <p class="subtitle">
+            Envie sua foto, ajuste a posição e baixe sua arte pronta.
+        </p>
+
+        <input type="file" id="upload" accept="image/*">
+
+        <div class="controls">
+            <label>Zoom</label>
+            <input
+                type="range"
+                id="zoom"
+                min="0.5"
+                max="3"
+                step="0.01"
+                value="1">
+        </div>
+
+        <div id="editor">
+
+            <canvas id="preview"></canvas>
+
+            <img
+                id="overlay"
+                src="img/Molde V0.2.png"
+                alt="Molde">
+
+        </div>
+
+        <button id="download">
+            Baixar Imagem
+        </button>
+
+    </div>
+
+    <script src="script/script.js"></script>
+
+</body>
+</html>
